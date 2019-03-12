@@ -1,0 +1,972 @@
+body{
+	background-color: #fff;
+}
+
+body *{
+	font-family: Arial;
+}
+
+/* @font-face {
+	font-family: GeometriaLight;
+	src: url(fonts/Geometria-Light.ttf);
+} */
+
+.wrap{
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.work{
+	max-width: 1200px;
+	margin: auto;
+}
+/**************************** Header ***************************/
+.wrap.headerWrap{
+	position: fixed;
+	z-index: 100;
+	height: 200px;
+	top: 0px;
+	left: 0px;
+	background-color: #000;
+}
+
+body.scr .wrap.headerWrap{
+	height: 80px;
+}
+
+.mobileMenu{
+	display: none;
+}
+
+body.scr .mobileMenu{
+	display: flex;
+}
+
+.mobileMenu{
+	display: none;
+	width: 100%;
+	justify-content: center;
+	position: absolute;
+	top: 140px;
+}
+
+body.scr .mobileMenu{
+	top: 30px;
+}
+
+.mobileMenu .listMobileMenu{
+	float: left;
+}
+
+.mobileMenu .listMobileMenu li{
+	float: left;
+	margin: 0px 10px;
+}
+
+body.scr .mobileMenu .listMobileMenu li{
+	margin: 0px 20px;
+}
+
+.mobileMenu .listMobileMenu li a{
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	color: #c1c2c2;
+}
+
+body.scr .mobileMenu .listMobileMenu li a{
+	font-size: 24px;
+}
+
+.header{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 200px;
+}
+
+body.scr .header{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 80px;
+}
+
+.header .logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -85px;
+	margin-left: -83px;
+	width: 166px;
+	height: 169px;
+	background: url(img/logo.png);
+}
+
+body.scr .header .logo{
+	display: none;
+}
+
+.header .leftMenu{
+	float: left;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.header .rightMenu{
+	float: left;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+body.scr .header .leftMenu,
+body.scr .header .rightMenu{
+	display: none;
+}
+
+.header .leftMenu .menuItem,
+.header .rightMenu .menuItem{
+	color: #c1c2c2;
+	text-decoration: none;
+	font-size: 26px;
+}
+
+.header .leftMenu .menuItem:hover,
+.header .rightMenu .menuItem:hover{
+	color: #fff;
+}
+
+.header .leftMenu .menuItem.first{
+	margin-right: 80px;
+}
+
+.header .rightMenu .menuItem.last{
+	margin-left: 150px;
+}
+/**************************** Header ***************************/
+
+/**************************** about ***************************/
+.wrap.aboutWrap{
+	background-image: url(img/bg_about.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 857px;
+	margin-top: 200px;
+}
+
+body.scr .wrap.aboutWrap{
+	margin-top: 100px;
+}
+
+.imgMob{
+	display: none;
+	float: left;
+	width: 100%;
+	padding-bottom: 100%;
+	margin-top: 20px;
+	background-image: url(img/imgCam.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.about{
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 100px 0px;
+}
+
+.about::before{
+	content: '';
+	position: absolute;
+	z-index: 0;
+	right: 0px;
+	bottom: 0px;
+	width: 60%;
+	height: 100%;
+	background-image: url(img/imgCam.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: contain;
+}
+
+.about .title{
+	position: relative;
+	z-index: 1;
+	float: left;
+	width: 100%;
+	color: #fff;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.about .listAbout{
+	position: relative;
+	z-index: 1;
+	float: left;
+	margin-top: 40px;
+}
+
+.about .listAbout li{
+	position: relative;
+	color: #fff;
+	font-size: 28px;
+	padding: 15px 0px;
+	margin: 50px 0px;
+	padding-left: 80px;
+}
+
+.about .listAbout li::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -23px;
+	left: 0px;
+	width: 62px;
+	height: 46px;
+	background: url(img/check.png);
+}
+
+.about .lineOrderAbout{
+	position: relative;
+	z-index: 1;
+	float: left;
+	width: 100%;
+}
+
+.about .lineOrderAbout .btnOrder{
+	float: left;
+	background-color: #fff;
+	font-size: 30px;
+	color: #0e1a3c;
+	padding: 15px 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.about .info{
+	position: relative;
+	z-index: 1;
+	float: left;
+	width: 100%;
+	font-size: 30px;
+	color: #fff;
+	margin-top: 50px;
+}
+/**************************** about ***************************/
+
+/**************************** character ***************************/
+.character{
+	float: left;
+	width: 100%;
+	padding: 75px 0px;
+}
+
+.character .textCharacter{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 26px;
+	line-height: 1.2em;
+	color: #000;
+}
+
+.imagesCharacter{
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.imagesCharacter .imgBlock{
+	float: left;
+	width: calc(50% - 60px);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px;
+}
+
+.imagesCharacter .imgBlock .title{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.imagesCharacter .imgBlock .title span{
+	position: relative;
+	color: #000;
+	font-size: 32px;
+	padding-left: 110px;
+}
+
+.imagesCharacter .imgBlock .title span::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 90px;
+	height: 90px;
+	margin-top: -45px;
+}
+
+.imagesCharacter .imgBlock:nth-child(1) .title span::before{
+	background: url(img/id1.png);
+}
+
+.imagesCharacter .imgBlock:nth-child(2) .title span::before{
+	background: url(img/id2.png);
+}
+
+.imagesCharacter .imgBlock:nth-child(3) .title span::before{
+	background: url(img/id3.png);
+}
+
+.imagesCharacter .imgBlock:nth-child(4) .title span::before{
+	background: url(img/id4.png);
+}
+
+.imagesCharacter .imgBlock .imageC{
+	margin-top: 45px;
+	float: left;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.imagesCharacter .imgBlock .imageC img{
+	max-width: 100%;
+	height: auto;
+}
+
+.wrap.characterMainWrap{
+	background-color: #1a2b3b;
+}
+
+.characterMain{
+	float: left;
+	width: 100%;
+	padding: 75px 0px;
+}
+
+.characterMain .titleC{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	color: #fff;
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
+}
+
+.characterMain .contentC{
+	float: left;
+	width: 100%;
+	display: flex;
+}
+
+.characterMain .contentC .imageBl{
+	float: left;
+	width: calc(50% - 40px);
+	margin-right: 40px;
+	background-image: url(img/imgMC.png);
+	background-position: left center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.characterMain .contentC .textBl{
+	float: left;
+	width: 50%;
+}
+
+.characterMain .contentC .textBl ul{
+	margin-top: 50px;
+}
+
+.characterMain .contentC .textBl ul li{
+	float: left;
+	width: 100%;
+	color: #fff;
+	font-size: 22px;
+	margin: 15px 0px;
+}
+
+.characterMain .contentC .textBl ul li span{
+	font-size: 24px;
+	font-family: Arial Black;
+}
+/**************************** character ***************************/
+
+/**************************** services ***************************/
+.servicesMain{
+	float: left;
+	width: 100%;
+	padding: 75px 0px;
+}
+
+.servicesMain .title{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 42px;
+}
+
+.servicesMain .content{
+	float: left;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.servicesMain .content .blService{
+	position: relative;
+	float: left;
+	width: calc(50% - 100px);
+	margin: 50px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.servicesMain .content .blService:nth-child(1){
+	background-color: #4f819e;
+}
+
+.servicesMain .content .blService:nth-child(2){
+	background-color: #2f3b4e;
+}
+
+.servicesMain .content .blService:nth-child(3){
+	background-color: #191a2e;
+}
+
+.servicesMain .content .blService:nth-child(4){
+	background-color: #3a2f50;
+}
+
+.servicesMain .content .blService .titleB{
+	position: relative;
+	float: left;
+	width: 100%;
+	font-size: 28px;
+	color: #fff;
+	line-height: 1.3em;
+	box-sizing: border-box;
+	padding-left: 100px;
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
+	margin-top: 20px;
+}
+
+.servicesMain .content .blService .titleB::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -45px;
+	left: 0px;
+	width: 90px;
+	height: 90px;
+}
+
+.servicesMain .content .blService:nth-child(1) .titleB::before{
+	background: url(img/bi1.png);
+}
+
+.servicesMain .content .blService:nth-child(2) .titleB::before{
+	background: url(img/bi2.png);
+}
+
+.servicesMain .content .blService:nth-child(3) .titleB::before{
+	background: url(img/bi3.png);
+}
+
+.servicesMain .content .blService:nth-child(4) .titleB::before{
+	background: url(img/bi4.png);
+}
+
+.servicesMain .content .blService .text{
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.3em;
+	margin-bottom: 140px;
+}
+
+.servicesMain .content .blService .price{
+	position: absolute;
+	bottom: 40px;
+	float: left;
+	width: calc(100% - 60px);
+	margin-top: 40px;
+	color: #fff;
+	font-size: 38px;
+	line-height: 1.3em;
+	background-color: #fff;
+	text-align: center;
+	padding: 15px 0px;
+	box-sizing: border-box;
+}
+
+.servicesMain .content .blService:nth-child(1) .price{
+	color: #4f819e;
+}
+
+.servicesMain .content .blService:nth-child(2) .price{
+	color: #2f3b4e;
+}
+
+.servicesMain .content .blService:nth-child(3) .price{
+	color: #191a2e;
+}
+
+.servicesMain .content .blService:nth-child(4) .price{
+	color: #3a2f50;
+}
+/**************************** services ***************************/
+
+/**************************** order ***************************/
+.wrap.orderWrap{
+	background-color: #000;
+	background-image: url(img/orderWrap.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.order{
+	float: left;
+	width: 100%;
+	padding: 75px 0px;
+}
+
+.order .orderContent{
+	float: right;
+	width: 50%;
+}
+
+.order .orderContent .title{
+	float: left;
+	width: 100%;
+	color: #fff;
+	font-size: 32px;
+	font-weight: normal;
+}
+
+.forder{
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.forder .lineForm{
+	float: left;
+	width: 100%;
+	margin: 20px 0px;
+}
+
+.forder .lineForm.btn{
+	display: flex;
+	justify-content: center;
+}
+
+.forder .lineForm .inp{
+	float: left;
+	width: 100%;
+	height: 54px;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 20px;
+	padding: 0px 10px;
+}
+
+.forder .lineForm .sendOrder{
+	background: #5490b0;
+	color: #fff;
+	font-size: 24px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	width: 400px;
+	height: 64px;
+}
+/**************************** order ***************************/
+
+/**************************** exampleWork ***************************/
+.exampleWork{
+	float: left;
+	width: 100%;
+	padding: 75px 0px;
+}
+
+.workplace{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0px 70px;
+}
+
+.exampleWork .titleSection{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	color: #6c6c6c;
+	font-weight: normal;
+}
+
+.sliderExampleWorks{
+	float: left;
+	width: 100%;
+	margin-top: 75px;
+}
+
+.sliderExampleWorks *{
+	outline: none;
+}
+
+.sliderExampleWorks .slick-arrow{
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 56px;
+	height: 103px;
+	margin-top: -51px;
+	background-image: url(img/pn.png);
+	background-color: rgba(0,0,0,0);
+	border: none;
+	cursor: pointer;
+	font-size: 0px;
+}
+
+.sliderExampleWorks .slick-arrow.slick-prev{
+	left: -60px;
+	background-position: 0px 0px;
+}
+
+.sliderExampleWorks .slick-arrow.slick-next{
+	right: -60px;
+	background-position: 0px -103px;
+}
+
+.sliderExampleWorks .slide{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0px 20px;
+	display: flex !important;
+	align-items: center;
+}
+
+.sliderExampleWorks .slide .imageSlide{
+	float: left;
+	width: calc(40% - 40px);
+	box-sizing: border-box;
+	margin-right: 40px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.sliderExampleWorks .slide .imageSlide img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.sliderExampleWorks .slide .textSlide{
+	float: left;
+	width: 60%;
+}
+
+.sliderExampleWorks .slide .textSlide p{
+	float: left;
+	font-style: Italic;
+	color: #6c6c6c;
+	width: 100%;
+	font-size: 18px;
+	margin-bottom: 15px;
+	line-height: 1.3em;
+}
+/**************************** exampleWork ***************************/
+
+/**************************** footer ***************************/
+.footerWrap{
+	background-color: #000;
+}
+
+.footer{
+	float: left;
+	width: 100%;
+	padding: 75px 0px;
+	background-image: url(img/footerLogo.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.listFooter{
+	float: left;
+}
+
+.listFooter li{
+	position: relative;
+	color: #fff;
+	font-size: 24px;
+	margin: 40px 0px;
+	padding-left: 60px;
+}
+
+.listFooter li::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 47px;
+	height: 47px;
+	background-image: url(img/footerIcons.png);
+	margin-top: -24px;
+}
+
+.listFooter li:nth-child(1)::before{
+	background-position: 0px 0px;
+}
+
+.listFooter li:nth-child(2)::before{
+	background-position: 0px -47px;
+}
+
+.listFooter li:nth-child(3)::before{
+	background-position: 0px -94px;
+}
+
+.listFooter li:nth-child(4)::before{
+	background-position: 0px -141px;
+}
+
+.listFooter li a{
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;
+}
+/**************************** footer ***************************/
+
+@media only screen and (max-width: 1200px){
+	.wrap{
+		box-sizing: border-box;
+		padding: 0px 10px;
+	}
+}
+
+@media only screen and (max-width: 1023px){
+	.header .leftMenu .menuItem.first{
+		margin-right: 40px;
+	}
+	.header .rightMenu .menuItem.last{
+		margin-left: 40px;
+	}
+
+	.header .leftMenu .menuItem, .header .rightMenu .menuItem{
+		font-size: 20px;
+	}
+
+	.imagesCharacter .imgBlock{
+		width: 100%;
+		margin: 30px 0px;
+	}
+
+	.servicesMain .content .blService{
+		width: calc(50% - 20px);
+		margin: 10px;
+	}
+
+	.servicesMain .content .blService .titleB{
+		font-size: 24px;
+	}
+	.wrap.orderWrap{
+		background: #000;
+	}
+
+	.order .orderContent{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.sliderExampleWorks .slide{
+		align-items: flex-start;
+	}
+}
+@media only screen and (max-width: 767px){
+	.about::before{
+		content: none;
+	}
+
+	.imgMob{
+		display: block;
+	}
+
+	.about .listAbout{
+		margin-top: 0px;
+	}
+
+	.about .listAbout li{
+		margin: 20px 0px;
+	}
+
+	.characterMain .contentC{
+		flex-wrap: wrap;
+	}
+
+	.characterMain .contentC .imageBl{
+		padding-bottom: 100%;
+		background-position: center center;
+		margin-right: 0px;
+	}
+
+	.characterMain .contentC .imageBl{
+		width: 100%;
+	}
+
+	.characterMain .contentC .textBl{
+		width: 100%;
+	}
+
+	.servicesMain .content .blService{
+		width: 100%;
+		margin: 10px 0px;
+	}
+
+	.header .leftMenu,
+	.header .rightMenu{
+		display: none;
+	}
+
+	.header .logo{
+		top: 20px;
+		margin-top: 0px;
+		margin-left: -51px;
+		width: 100px;
+		height: 102px;
+		background-size: cover;
+	}
+
+	.header{
+		height: 180px;
+	}
+
+	.mobileMenu{
+		display: flex;
+	}
+
+	body.scr .mobileMenu .listMobileMenu li a{
+		font-size: 14px !important;
+	}
+
+	body.scr .mobileMenu .listMobileMenu li{
+		margin: 0px 10px !important;
+	}
+
+	.wrap.headerWrap{
+		height: 180px;
+	}
+
+	.wrap.aboutWrap{
+		margin-top: 180px;
+	}
+}
+
+@media only screen and (max-width: 560px){
+	.sliderExampleWorks .slide{
+		flex-wrap: wrap;
+	}
+
+	.sliderExampleWorks .slide .imageSlide{
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	.sliderExampleWorks .slide .textSlide{
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	.sliderExampleWorks .slick-arrow{
+		width: 27px;
+		height: 50px;
+		margin-top: -13px;
+		background-image: url(img/pnm.png);
+	}
+
+	.sliderExampleWorks .slick-arrow.slick-prev{
+		left: -30px;
+		background-position: 0px 0px;
+	}
+
+	.sliderExampleWorks .slick-arrow.slick-next{
+		right: -30px;
+		background-position: 0px -50px;
+	}
+
+	.workplace{
+		padding: 0px 35px;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.footer{
+		background: #000;
+	}
+}
+
+@media only screen and (max-width: 470px){
+	.about .title,
+	.characterMain .titleC,
+	.servicesMain .title,
+	.exampleWork .titleSection{
+		font-size: 30px;
+	}
+
+	.about .info{
+		font-size: 26px;
+	}
+
+	.servicesMain .content .blService{
+		padding: 10px;
+	}
+
+	.servicesMain .content .blService .titleB{
+		font-size: 22px;
+	}
+
+	.servicesMain .content .blService .price{
+		width: calc(100% - 20px);
+	}
+}
+
+@media only screen and (max-width: 419px){
+	.forder .lineForm .sendOrder{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 349px){
+	body.scr .mobileMenu .listMobileMenu li{
+		margin: 0px 7px !important;
+	}
+
+	.mobileMenu .listMobileMenu li a{
+		font-size: 13px;
+	}
+}
